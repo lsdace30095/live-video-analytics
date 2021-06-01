@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "smartcitykubernetes1-70ef"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "smartcitykubernetes1-70ef"
+  template:
+    metadata:
+      labels:
+        app: "smartcitykubernetes1-70ef"
+    spec:
+      containers:
+        - name: "smartcitykubernetes1-70ef"
+          image: "smartcitye2e1.azurecr.io/smartcitykubernetes1"
+          ports:
+          - containerPort: 7788
