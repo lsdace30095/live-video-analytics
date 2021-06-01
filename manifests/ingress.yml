@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "smartcitykubernetes1-70ef"
+    labels:
+        app: "smartcitykubernetes1-70ef"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: smartcity-kubernetes-1bbc4-smartcitykubernetes1-70ef.15e35c6a3d8445948d79.eastus.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "smartcitykubernetes1-70ef"
+                servicePort: 7788
