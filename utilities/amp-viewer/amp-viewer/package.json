@@ -26,7 +26,7 @@
         "@hapi/wreck": "^17.0.0",
         "fs-extra": "^9.0.1",
         "nconf": "^0.10.0",
-        "query-string": "^6.13.1",
+        "query-string": "^6.14.1",
         "spryly": "^2.0.8",
         "uuid": "^7.0.3"
     },
