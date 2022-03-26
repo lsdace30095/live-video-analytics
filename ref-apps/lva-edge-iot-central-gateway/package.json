@@ -12,7 +12,9 @@
     "preversion": "npm test",
     "version": "node ./scripts/dockerBuild.js --docker-build",
     "postversion": "node ./scripts/dockerBuild.js --docker-push",
-    "postinstall": "node ./scripts/setupDevEnvironment.js"
+    "postinstall": "node ./scripts/setupDevEnvironment.js",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "sseiber",
   "license": "MIT",
@@ -32,7 +34,8 @@
     "nconf": "^0.10.0",
     "pjson": "^1.0.9",
     "spryly": "^2.0.8",
-    "uuid": "^7.0.3"
+    "uuid": "^7.0.3",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/hapi__hapi": "^19.0.3",
@@ -59,5 +62,6 @@
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "./__mocks__/fileMock.js"
     }
-  }
+  },
+  "snyk": true
 }
