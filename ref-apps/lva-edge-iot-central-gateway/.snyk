@@ -1,0 +1,24 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - azure-iot-device > lodash:
+        patched: '2022-10-06T22:59:51.710Z'
+    - azure-iot-device > machina > lodash:
+        patched: '2022-10-06T22:59:51.710Z'
+    - azure-iot-device-mqtt > machina > lodash:
+        patched: '2022-10-06T22:59:51.710Z'
+    - azure-iot-provisioning-device > machina > lodash:
+        patched: '2022-10-06T22:59:51.710Z'
+    - azure-iot-provisioning-device-mqtt > machina > lodash:
+        patched: '2022-10-06T22:59:51.710Z'
+    - azure-iot-device-mqtt > azure-iot-device > machina > lodash:
+        patched: '2022-10-06T22:59:51.710Z'
+    - azure-iot-device-mqtt > azure-iot-mqtt-base > machina > lodash:
+        patched: '2022-10-06T22:59:51.710Z'
+    - azure-iot-provisioning-device-mqtt > azure-iot-provisioning-device > machina > lodash:
+        patched: '2022-10-06T22:59:51.710Z'
+    - azure-iot-provisioning-device-mqtt > azure-iot-mqtt-base > machina > lodash:
+        patched: '2022-10-06T22:59:51.710Z'
