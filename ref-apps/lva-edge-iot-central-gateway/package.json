@@ -23,7 +23,7 @@
     "azure-iot-device": "1.17.0",
     "azure-iot-device-mqtt": "^1.15.1",
     "azure-iot-provisioning-device": "1.8.4",
-    "azure-iot-provisioning-device-mqtt": "1.7.4",
+    "azure-iot-provisioning-device-mqtt": "1.7.5",
     "azure-iot-security-symmetric-key": "1.7.4",
     "fs-extra": "^9.0.1",
     "lodash.get": "^4.4.2",
@@ -31,7 +31,7 @@
     "moment": "^2.27.0",
     "nconf": "^0.10.0",
     "pjson": "^1.0.9",
-    "spryly": "^2.0.8",
+    "spryly": "^3.0.0",
     "uuid": "^7.0.3"
   },
   "devDependencies": {
